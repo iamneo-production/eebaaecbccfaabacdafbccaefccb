@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.076 s - in TestSuite
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 6.401 s <<< FAILURE! - in TestSuite
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_1  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: expected [ ] but found [Get the Title]
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_1(AppTest.java:29)
+
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [ ] but found [get Yor profilename]
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2(AppTest.java:38)
+
