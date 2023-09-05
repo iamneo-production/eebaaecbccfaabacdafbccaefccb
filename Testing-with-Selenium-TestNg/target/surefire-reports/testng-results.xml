@@ -2,17 +2,17 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-05T13:42:11 UTC" name="Suite" finished-at="2023-09-05T13:42:21 UTC" duration-ms="10548">
+  <suite started-at="2023-09-05T13:47:50 UTC" name="Suite" finished-at="2023-09-05T13:48:01 UTC" duration-ms="10630">
     <groups>
     </groups>
-    <test started-at="2023-09-05T13:42:11 UTC" name="Test" finished-at="2023-09-05T13:42:21 UTC" duration-ms="10548">
+    <test started-at="2023-09-05T13:47:50 UTC" name="Test" finished-at="2023-09-05T13:48:01 UTC" duration-ms="10630">
       <class name="ai.iamneo.testing.Testing_Selenium_TestNg.AppTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:42:11 UTC" name="beforeTest" finished-at="2023-09-05T13:42:21 UTC" duration-ms="10521" status="FAIL">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:47:50 UTC" name="beforeTest" finished-at="2023-09-05T13:48:01 UTC" duration-ms="10597" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.6.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
+System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.24.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}]]>
@@ -20,7 +20,7 @@ Capabilities {}]]>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.6.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
+System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.24.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}
@@ -134,12 +134,12 @@ at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testcase_1()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:42:21 UTC" name="testcase_1" finished-at="2023-09-05T13:42:21 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="testcase_1()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:48:01 UTC" name="testcase_1" finished-at="2023-09-05T13:48:01 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.6.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
+System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.24.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}]]>
@@ -147,7 +147,7 @@ Capabilities {}]]>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.6.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
+System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.24.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}
@@ -261,12 +261,12 @@ at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_1 -->
-        <test-method signature="testcase_2()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:42:21 UTC" name="testcase_2" finished-at="2023-09-05T13:42:21 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="testcase_2()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:48:01 UTC" name="testcase_2" finished-at="2023-09-05T13:48:01 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.6.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
+System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.24.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}]]>
@@ -274,7 +274,7 @@ Capabilities {}]]>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.6.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
+System info: host: 'eebaaecbccfaabacdafbccaefccb-0', ip: '10.80.24.5', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}
@@ -388,7 +388,7 @@ at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_2 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:42:21 UTC" name="afterTest" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1693921341602" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:48:01 UTC" name="afterTest" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1693921681590" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
