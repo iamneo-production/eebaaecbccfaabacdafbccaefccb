@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-05T13:47:50 UTC" name="Suite" finished-at="2023-09-05T13:48:01 UTC" duration-ms="10630">
+  <suite started-at="2023-09-05T13:52:26 UTC" name="Suite" finished-at="2023-09-05T13:52:37 UTC" duration-ms="10628">
     <groups>
     </groups>
-    <test started-at="2023-09-05T13:47:50 UTC" name="Test" finished-at="2023-09-05T13:48:01 UTC" duration-ms="10630">
+    <test started-at="2023-09-05T13:52:26 UTC" name="Test" finished-at="2023-09-05T13:52:37 UTC" duration-ms="10628">
       <class name="ai.iamneo.testing.Testing_Selenium_TestNg.AppTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:47:50 UTC" name="beforeTest" finished-at="2023-09-05T13:48:01 UTC" duration-ms="10597" status="FAIL">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:52:26 UTC" name="beforeTest" finished-at="2023-09-05T13:52:37 UTC" duration-ms="10598" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -134,7 +134,7 @@ at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testcase_1()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:48:01 UTC" name="testcase_1" finished-at="2023-09-05T13:48:01 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="testcase_1()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:52:37 UTC" name="testcase_1" finished-at="2023-09-05T13:52:37 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -261,7 +261,7 @@ at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_1 -->
-        <test-method signature="testcase_2()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:48:01 UTC" name="testcase_2" finished-at="2023-09-05T13:48:01 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="testcase_2()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:52:37 UTC" name="testcase_2" finished-at="2023-09-05T13:52:37 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -388,7 +388,7 @@ at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_2 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:48:01 UTC" name="afterTest" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1693921681590" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:52:37 UTC" name="afterTest" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1693921957189" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
