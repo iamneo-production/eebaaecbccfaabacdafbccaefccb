@@ -34,7 +34,7 @@ public class AppTest {
 	@Test
 	public void testcase_2() throws InterruptedException 
       {
-	       //write Your Code here to Login
+	    
 		   driver.findElement(By.xpath("//div[@class='_1XBjg- row']//form//input[@type='text']")).sendKeys("vijji@gmail.com");
 		   driver.findElement(By.xpath("//div[@class='_1XBjg- row']//form//input[@type='password']")).sendKeys("1234");   
 		   driver.findElement(By.xpath("//div[@class='_1XBjg- row']//form//button[@type='submit']")).click();   
