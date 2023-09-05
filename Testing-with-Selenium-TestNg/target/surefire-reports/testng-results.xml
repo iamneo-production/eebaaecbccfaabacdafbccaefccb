@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-05T13:52:26 UTC" name="Suite" finished-at="2023-09-05T13:52:37 UTC" duration-ms="10628">
+  <suite started-at="2023-09-05T13:55:14 UTC" name="Suite" finished-at="2023-09-05T13:58:15 UTC" duration-ms="180834">
     <groups>
     </groups>
-    <test started-at="2023-09-05T13:52:26 UTC" name="Test" finished-at="2023-09-05T13:52:37 UTC" duration-ms="10628">
+    <test started-at="2023-09-05T13:55:14 UTC" name="Test" finished-at="2023-09-05T13:58:15 UTC" duration-ms="180834">
       <class name="ai.iamneo.testing.Testing_Selenium_TestNg.AppTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:52:26 UTC" name="beforeTest" finished-at="2023-09-05T13:52:37 UTC" duration-ms="10598" status="FAIL">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:55:14 UTC" name="beforeTest" finished-at="2023-09-05T13:58:15 UTC" duration-ms="180751" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -57,8 +57,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:83)
 at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
 at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
 at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
@@ -91,50 +91,29 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 ... 32 more
-Caused by: java.net.ConnectException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-at org.asynchttpclient.netty.channel.NettyConnectListener$1.onFailure(NettyConnectListener.java:151)
-at org.asynchttpclient.netty.SimpleFutureListener.operationComplete(SimpleFutureListener.java:26)
-at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
-at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
-at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
-at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
-at io.netty.handler.ssl.SslHandler.setHandshakeFailure(SslHandler.java:1880)
-at io.netty.handler.ssl.SslHandler.setHandshakeFailure(SslHandler.java:1850)
-at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1219)
-at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
-at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:507)
-at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:446)
-at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 180000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
+... 63 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 180000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: io.netty.handler.ssl.NotSslRecordException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
-... 20 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testcase_1()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:52:37 UTC" name="testcase_1" finished-at="2023-09-05T13:52:37 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="testcase_1()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:58:15 UTC" name="testcase_1" finished-at="2023-09-05T13:58:15 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -184,8 +163,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:83)
 at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
 at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
 at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
@@ -218,50 +197,29 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 ... 32 more
-Caused by: java.net.ConnectException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-at org.asynchttpclient.netty.channel.NettyConnectListener$1.onFailure(NettyConnectListener.java:151)
-at org.asynchttpclient.netty.SimpleFutureListener.operationComplete(SimpleFutureListener.java:26)
-at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
-at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
-at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
-at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
-at io.netty.handler.ssl.SslHandler.setHandshakeFailure(SslHandler.java:1880)
-at io.netty.handler.ssl.SslHandler.setHandshakeFailure(SslHandler.java:1850)
-at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1219)
-at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
-at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:507)
-at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:446)
-at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 180000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
+... 63 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 180000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: io.netty.handler.ssl.NotSslRecordException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
-... 20 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_1 -->
-        <test-method signature="testcase_2()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:52:37 UTC" name="testcase_2" finished-at="2023-09-05T13:52:37 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="testcase_2()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:58:15 UTC" name="testcase_2" finished-at="2023-09-05T13:58:15 UTC" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -311,8 +269,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:83)
 at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
 at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
 at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
@@ -345,50 +303,29 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 ... 32 more
-Caused by: java.net.ConnectException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-at org.asynchttpclient.netty.channel.NettyConnectListener$1.onFailure(NettyConnectListener.java:151)
-at org.asynchttpclient.netty.SimpleFutureListener.operationComplete(SimpleFutureListener.java:26)
-at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
-at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
-at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
-at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
-at io.netty.handler.ssl.SslHandler.setHandshakeFailure(SslHandler.java:1880)
-at io.netty.handler.ssl.SslHandler.setHandshakeFailure(SslHandler.java:1850)
-at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1219)
-at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1284)
-at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:507)
-at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:446)
-at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
-at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
-at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
-at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
-at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 180000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
+... 63 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:4444 after 180000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: io.netty.handler.ssl.NotSslRecordException: not an SSL/TLS record: 485454502f312e31203430302042616420526571756573740d0a636f6e74656e742d6c656e6774683a2031350d0a636f6e6e656374696f6e3a20636c6f73650d0a0d0a343030204261642052657175657374
-at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1214)
-... 20 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase_2 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:52:37 UTC" name="afterTest" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1693921957189" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:ai.iamneo.testing.Testing_Selenium_TestNg.AppTest@2928854b]" started-at="2023-09-05T13:58:15 UTC" name="afterTest" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1693922295724" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
