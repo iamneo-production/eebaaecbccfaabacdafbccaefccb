@@ -19,7 +19,7 @@ public class AppTest {
 	@BeforeTest
 	public void beforeTest() throws Exception {
 		
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+		driver = new RemoteWebDriver(new URL("https://localhost:4444"), chromeOptions);
 		driver.get("https://www.flipkart.com");
 		driver.switchTo().frame(0);
 	}
